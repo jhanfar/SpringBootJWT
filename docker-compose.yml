@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  mysqldb:
+    image: mysql:8
+    container_name: mysqldb
+    environment:
+      - MYSQL_ROOT_PASSWORD=j71271022
+      - MYSQL_DATABASE=construcciones
+    networks:
+      - red-mysql
+    ports:
+      - 33061:3306
+
+  crudspring-container:
+    image: crudspring:java
+    container_name: crudspring-container
+    networks:
+      - red-mysql
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysqldb
+networks:
+  red-mysql:
+    name: red-mysql
