@@ -1,0 +1,23 @@
+-- url para utilizar web
+
+localhost:8080/auth/nuevo
+{
+    "nombre":"admin5", "nombreUsuario":"admin7", "email":"o4@a.a","password":"admin5","roles":["admin"]
+}
+
+-- localhost:8080/auth/login
+
+{
+    "nombreUsuario":"admin7", "password":"admin5"
+}
+
+-- localhost:8080/producto/lista
+ Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYyNTA2NTIyMCwiZXhwIjoxNjI1MTAxMjIwfQ.jNFQB0vXNSyMiCPqfBjY-D3MIMm9rFbW0_zz8-OBThJYLSHcmy9CK0TEfvWax3L2Gui3ufPHQSL4wDkUAMHsBQ
+
+-- localhost:8080/producto/create
+
+Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYyNTA2NTIyMCwiZXhwIjoxNjI1MTAxMjIwfQ.jNFQB0vXNSyMiCPqfBjY-D3MIMm9rFbW0_zz8-OBThJYLSHcmy9CK0TEfvWax3L2Gui3ufPHQSL4wDkUAMHsBQ
+
+{
+    "nombre":"prod147", "precio":377
+}
